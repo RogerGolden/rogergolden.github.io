@@ -1,60 +1,138 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rogelio Plascencia — Product Manager</title>
-  <meta name="description" content="Rogelio Plascencia, Product Manager en búsqueda de nuevas oportunidades. Experiencia en SEO técnico, automatización y gestión de productos." />
+  <meta name="description" content="Product Manager focused on internal platforms, SEO automation, and data-driven improvements." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Rogelio Plascencia</h1>
-    <p>Product Manager con experiencia en SEO técnico y automatización. Actualmente buscando nuevas oportunidades para liderar proyectos que combinen estrategia, datos y tecnología.</p>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Rogelio Plascencia</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noreferrer">LinkedIn</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h2>Experiencia</h2>
-      <ul>
-        <li><strong>Product Manager, SEO</strong> — Envato · 2024–2025</li>
-        <li><strong>SEO Specialist</strong> — Varias empresas · 2018–2023</li>
-      </ul>
+    <!-- Hero / Intro -->
+    <section id="about" class="section hero">
+      <div class="container hero-grid">
+        <figure class="hero-photo" aria-label="Photo of Rogelio">
+          <!-- Replace with your photo (1:1 works best) -->
+          <img src="https://placehold.co/520x520?text=Photo" alt="Portrait placeholder" />
+        </figure>
+
+        <div class="hero-copy">
+          <h1>Rogelio Plascencia</h1>
+          <p class="kicker">Product Manager</p>
+
+          <p>
+            I’m a Product Manager at Envato focused on internal platforms and SEO automation.
+            I connect people and technology—turning complex, backend-heavy needs into clear priorities and shippable outcomes.
+          </p>
+          <p>
+            Lately, I’ve led initiatives that improved internal tooling, decoupled critical data systems,
+            and enabled new SEO capabilities across large catalogs.
+          </p>
+          <p class="availability">
+            Actively exploring new product opportunities.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn" href="#experience">View work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Habilidades</h2>
-      <ul>
-        <li>Gestión de producto y roadmap</li>
-        <li>SEO técnico e indexación</li>
-        <li>Automatización de procesos</li>
-        <li>Análisis de datos y métricas</li>
-      </ul>
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2>My work experience</h2>
+
+        <article class="card">
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Envato Elements</h3>
+              <span class="badge">2023 — Present</span>
+            </div>
+            <p>
+              Led product work to deliver new features for SEO and platform reliability.
+              Partnered with engineering to plan and execute refactors (e.g., decoupling key data systems and databases)
+              and to improve internal observability and workflows.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a class="btn" href="https://elements.envato.com/" target="_blank" rel="noreferrer">Visit site</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body">
+            <div class="card-header">
+              <h3>Placeit by Envato</h3>
+              <span class="badge">2019 — 2023</span>
+            </div>
+            <p>
+              Improved internal systems used by design and content teams—starting with hands‑on prototypes
+              (e.g., Python + Selenium tagging automation) that evolved into productized tools in the admin interface.
+              This initiative led to a PM promotion and wider infrastructure upgrades.
+            </p>
+          </div>
+          <div class="card-cta">
+            <a class="btn" href="https://placeit.net/" target="_blank" rel="noreferrer">Visit site</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h2>Contacto</h2>
-      <p>Puedes escribirme a <a id="mail" href="mailto:hola@tu-dominio.com">hola@tu-dominio.com</a> o conectarte conmigo en <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>.</p>
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:you@email.com">you@email.com</a><br />
+          Based in LATAM · Open to remote and hybrid roles.
+        </p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    © <span id="y"></span> Rogelio Plascencia
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rogelio Plascencia</p>
+      <div class="foot-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
   </footer>
 
   <script>
-    document.getElementById('y').textContent=new Date().getFullYear();
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
+  <!-- Optional: Structured data for better SEO -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@type":"Person",
-    "name":"Rogelio Plascencia",
-    "jobTitle":"Product Manager",
-    "url":"https://tu-dominio.com/",
-    "sameAs":["https://www.linkedin.com/in/"],
-    "knowsAbout":["SEO técnico","automatización","gestión de producto"]
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rogelio Plascencia",
+    "jobTitle": "Product Manager",
+    "url": "https://yourdomain.com",
+    "sameAs": ["https://www.linkedin.com/in/your-handle"],
+    "email": "mailto:you@email.com"
   }
   </script>
 </body>
