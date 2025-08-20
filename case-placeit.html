@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Case Study — Placeit by Envato</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Rogelio Plascencia</a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Case Study: Placeit by Envato</h1>
+      <p class="kicker">2019 — 2023</p>
+      <p>
+        At Placeit, I improved internal systems for design and content teams.
+        I started with hands-on prototypes—like a Python + Selenium automation for tagging—
+        which evolved into production-ready tools inside the admin interface.
+      </p>
+      <p>
+        This initiative earned me a PM promotion and supported infrastructure upgrades
+        that scaled content workflows across the business.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:hello@rogelioplascencia.com">hello@rogelioplascencia.com</a><br />
+          Based in Mexico · Open to remote roles.
+        </p>
+
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" rows="5" placeholder="Message" required></textarea>
+
+          <!-- Honeypot anti-spam -->
+          <input type="text" name="_gotcha" style="display:none">
+
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Rogelio Plascencia</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
