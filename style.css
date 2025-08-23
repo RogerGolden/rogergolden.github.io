@@ -5,7 +5,7 @@
   --surface-2: #f6f6f6;   /* hover */
   --line: #e0e0e0;        /* subtle borders */
   --text: #1a1a1a;        /* main text */
-  --muted: #555555;       /* secondary text */
+  --muted: #232323;       /* secondary text */
   --accent: #111111;      /* buttons dark */
   --shadow: 0 4px 12px rgba(0,0,0,.08), 0 2px 4px rgba(0,0,0,.06);
   --radius-lg: 18px;
@@ -18,13 +18,25 @@
 html,body{
   margin:0;
   padding:0;
-  background: var(--bg);
+  background: none;
   color: var(--text);
   font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+  position: relative;
+}
+
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: url("images/textured-paper.png") repeat;
+  background-size: auto;   
+  opacity: .3;            
+  z-index: -1;
 }
 
 img{ display:block; max-width:100%; height:auto; }
@@ -69,12 +81,13 @@ p{ color: var(--muted); margin: 0 0 1rem 0; }
   text-decoration: none;
   letter-spacing: .2px;
 }
-.nav a{
-  color: var(--muted) !important;
-  text-decoration: none;
+.site-header .nav a{
+  color: var(--text);
   margin-left: 16px;
 }
-.nav a:hover{ color: var(--text); }
+.site-header .nav a:hover{
+  color: var(--text); 
+}
 
 /* ========== Hero ========== */
 .hero{ padding-top: clamp(40px, 6vw, 80px); }
@@ -235,12 +248,13 @@ a:active {
   padding: 22px 0;
   color: var(--muted);
 }
-.foot-links a{
-  color: var(--muted);
+.site-footer .foot-links a{
+  color: var(--text);
   margin-left: 16px;
 }
-.foot-links a:hover{ color: var(--text); }
-
+.site-footer .foot-links a:hover{
+  color: var(--text);
+}
 /* ========== Responsive ========== */
 @media (max-width: 880px){
   .hero-grid{
