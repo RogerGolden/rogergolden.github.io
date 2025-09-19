@@ -4,29 +4,47 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Case Study — Placeit by Envato</title>
+  <meta name="description" content="Internal tooling and workflow scaling at Placeit: from Python+Selenium prototypes to productized admin tools." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">Rogelio Plascencia</a>
+      <nav class="nav">
+        <a href="index.html#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/rogelioplascencia/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </nav>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <h1>Case Study: Placeit by Envato</h1>
-      <p class="kicker">2019 — 2023</p>
-      <p>
-        At Placeit, I improved internal systems for design and content teams.
-        I started with hands-on prototypes—like a Python + Selenium automation for tagging—
-        which evolved into production-ready tools inside the admin interface.
-      </p>
-      <p>
-        This initiative earned me a PM promotion and supported infrastructure upgrades
-        that scaled content workflows across the business.
-      </p>
-    </div>
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Case Study: Placeit by Envato</h1>
+        <p class="kicker">Scaling internal tools for content operations</p>
+
+        <h3>Context</h3>
+        <p>
+          <a href="https://placeit.net">Placeit</a> is a SaaS platform offering realistic mockups, customizable templates, and stock assets
+           primarily for print-on-demand businesses. The company’s strength lies in its large, high-quality content library, 
+           produced in-house by a specialized team of designers and photographers.
+        </p>
+        <p>
+          As a Product Manager, I focused on the <strong>internal platform used by the content team</strong> to upload and manage 
+          these assets, ensuring a smooth pipeline between content creation and the customer-facing site.
+        </p>
+
+        <!-- Imagen rectangular centrada con mismo estilo del home + caption
+        <figure class="case-figure">
+          <img src="images/dummy2.jpg" alt="Bulk upload feature in the Placeit admin interface">
+          <figcaption>Bulk upload tool integrated into the admin — reduced upload time by 70% and unblocked weekly content drops.</figcaption>
+        </figure>
+        -->
+      </div>
+    </section>
 
     <!-- Contact -->
     <section id="contact" class="section contact">
@@ -34,10 +52,10 @@
         <h2>Contact</h2>
         <p>
           Email: <a href="mailto:hello@rogelioplascencia.com">hello@rogelioplascencia.com</a><br />
-          Based in Mexico · Open to remote roles.
+          Based in Mexico · Open to remote roles
         </p>
 
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/mwpqdbgq" method="POST">
           <input type="text" name="name" placeholder="Name" required>
           <input type="email" name="email" placeholder="Email" required>
           <textarea name="message" rows="5" placeholder="Message" required></textarea>
@@ -54,10 +72,37 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Rogelio Plascencia</p>
+      <div class="foot-links">
+        <a href="index.html#about">About</a>
+        <a href="https://www.linkedin.com/in/rogelioplascencia/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
     </div>
   </footer>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Breadcrumbs JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://rogelioplascencia.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Case Study: Placeit by Envato",
+        "item": "https://rogelioplascencia.com/case-placeit.html"
+      }
+    ]
+  }
   </script>
 </body>
 </html>

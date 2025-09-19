@@ -35,7 +35,7 @@ body::before{
   pointer-events: none;
   background: url("images/textured-paper.png") repeat;
   background-size: auto;   
-  opacity: .3;            
+  opacity: .25;            
   z-index: -1;
 }
 
@@ -115,6 +115,14 @@ p{ color: var(--muted); margin: 0 0 1rem 0; }
   letter-spacing: .3px;
   margin-top: .25rem;
 }
+
+.kicker{
+  color: var(--muted);   
+  font-weight: 400;          
+  letter-spacing: .3px;  
+  padding-bottom: 1rem;
+}
+
 .availability{ color: var(--text); font-weight: 600; }
 
 /* ========== Cards (Experience) ========== */
@@ -268,3 +276,30 @@ a:active {
   .nav a{ margin-left: 12px; }
 }
 
+/* ========== Case images ========== */
+.case-figure{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  width: clamp(250px, 60vw, 500px); /* centrada y fluida */
+  margin: 20px auto;                /* centra el bloque */
+}
+
+.case-figure img{
+  display: block;
+  width: 100%;
+  height: auto; /* imagen horizontal rectangular */
+}
+
+.case-figure figcaption{
+  padding: 10px 14px;
+  font-size: .8rem;
+  font-style: italic;
+  line-height: 1.1; 
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+  text-align: center; /* pie de foto centrado */
+}

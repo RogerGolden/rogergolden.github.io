@@ -4,28 +4,37 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Case Study — Envato Elements</title>
+  <meta name="description" content="SEO and platform reliability initiatives: decoupling data systems, observability, and SEO capabilities at scale." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html">Rogelio Plascencia</a>
+      <nav class="nav">
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/rogelioplascencia/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </nav>
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <h1>Case Study: Envato Elements</h1>
-      <p class="kicker">2023 — Present</p>
-      <p>
-        At Envato Elements, I led product initiatives focused on SEO and platform reliability.
-        I partnered closely with engineering to plan and execute major refactors—
-        including decoupling key data systems and improving observability.
-      </p>
-      <p>
-        This work enabled new SEO capabilities across large content catalogs and improved developer workflows.
-      </p>
-    </div>
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>Case Study: Envato Elements</h1>
+        <p class="kicker">Some text</p>
+        <p>
+          At Envato Elements, I led product initiatives focused on SEO and platform reliability.
+          I partnered closely with engineering to plan and execute major refactors—
+          including decoupling key data systems and improving observability.
+        </p>
+        <p>
+          This work enabled new SEO capabilities across large content catalogs and improved developer workflows.
+        </p>
+      </div>
+    </section>
 
     <!-- Contact -->
     <section id="contact" class="section contact">
@@ -33,10 +42,10 @@
         <h2>Contact</h2>
         <p>
           Email: <a href="mailto:hello@rogelioplascencia.com">hello@rogelioplascencia.com</a><br />
-          Based in Mexico · Open to remote roles.
+          Based in Mexico · Open to remote roles
         </p>
 
-        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form class="contact-form" action="https://formspree.io/f/mwpqdbgq" method="POST">
           <input type="text" name="name" placeholder="Name" required>
           <input type="email" name="email" placeholder="Email" required>
           <textarea name="message" rows="5" placeholder="Message" required></textarea>
@@ -53,10 +62,37 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> Rogelio Plascencia</p>
+      <div class="foot-links">
+        <a href="index.html#about">About</a>
+        <a href="https://www.linkedin.com/in/rogelioplascencia/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
     </div>
   </footer>
+
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Breadcrumbs JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://rogelioplascencia.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Case Study: Envato Elements",
+        "item": "https://rogelioplascencia.com/case-envato.html"
+      }
+    ]
+  }
   </script>
 </body>
 </html>
